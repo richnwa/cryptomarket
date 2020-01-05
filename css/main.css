@@ -36,6 +36,10 @@ h1 {
 	width: 100%;
 }
 
+h2 {
+	width: 100%;
+}
+
 .first {
 	width: 80%;
 	display: -webkit-box;
@@ -56,4 +60,9 @@ h1 {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	        -ms-flex-wrap: wrap;
+	            flex-wrap: wrap;
 }
+
+
+

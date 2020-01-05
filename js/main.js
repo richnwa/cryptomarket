@@ -5,16 +5,20 @@ $(document).ready(function() {
 });
 
 function getRate() {
-	let out = '';
+	let out = document.getElementById('out');
 	$.get(
 		"https://api.coindesk.com/v1/bpi/currentprice.json",
 		function(data) {
 			data = JSON.parse(data);
-			console.log(data);			
-			document.getElementById('out').innerHTML = data.bpi.USD.rate_float;
+			console.log(data);
+			for (var key in data.bpi){
+				out.innerHTML += parseFloat(data.bpi[key].rate_float).toFixed(2) + ' ' + data.bpi[key].symbol + '<br>' ;
+			}
 		}
 	);	
 }
+
+
 
 function getHistoryRate() {
 	// https://api.coindesk.com/v1/bpi/historical/close.json

@@ -14,8 +14,10 @@
 	</section>
 	<section>
 		<div class="second">
+			<h2>Choose the period you are interested in</h2>
 			<input type="date" id="date1">
 			<input type="date" id="date2">
+			<button id="show">Show graph</button>
 		</div>
 	</section>
 
