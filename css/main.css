@@ -64,5 +64,12 @@ h2 {
 	            flex-wrap: wrap;
 }
 
-
-
+.bars {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 70%;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}

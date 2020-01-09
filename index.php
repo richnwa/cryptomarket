@@ -19,8 +19,11 @@
 			<input type="date" id="date2">
 			<button id="show">Show graph</button>
 		</div>
+		<div class="bars">
+			<canvas id="myChart"></canvas>
+		</div>
 	</section>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
